@@ -13,7 +13,7 @@ from sklearn.metrics import classification_report
 
 # memanggil model
 loaded_model = pickle.load(
-    open('model.sav', 'rb'))
+    open('./model.sav', 'rb'))
 
 
 def prediksinasabah(baru):
@@ -25,7 +25,7 @@ def prediksinasabah(baru):
 
 st.title('Klasifikasi Pemberian Pinjaman Kepada Nasabah Menggunakan Metode Decision Tree')
 
-credit_dataset = pd.read_csv("credit_card_approval.csv")
+credit_dataset = pd.read_csv("./credit_card_approval.csv")
 if st.checkbox('Tampilkan Dataset Yang Digunakan'):
     st.subheader('Dataset')
     st.write(credit_dataset)
