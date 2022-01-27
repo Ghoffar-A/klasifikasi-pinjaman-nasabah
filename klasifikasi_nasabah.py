@@ -33,7 +33,7 @@ if st.checkbox('Tampilkan Dataset Yang Digunakan'):
 # creating instance of labelencoder
 labelencoder = LabelEncoder()
 # Assigning numerical values and storing in another column
-credit_dataset[CODE_GENDER] = labelencoder.fit_transform(credit_dataset[CODE_GENDER])
+credit_dataset['CODE_GENDER'] = labelencoder.fit_transform(credit_dataset['CODE_GENDER'])
 credit_dataset['FLAG_OWN_CAR'] = labelencoder.fit_transform(credit_dataset['FLAG_OWN_CAR'])
 credit_dataset['FLAG_OWN_REALTY'] = labelencoder.fit_transform(credit_dataset['FLAG_OWN_REALTY'])
 credit_dataset['STATUS'] = labelencoder.fit_transform(credit_dataset['STATUS'])
