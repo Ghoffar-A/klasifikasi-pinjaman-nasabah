@@ -68,9 +68,9 @@ if st.checkbox('Menampilkan Data Latih dan Data Uji'):
 
 
 # mencaritahu proporsi unik di kolom atribut
-a = credit_dataset.TARGET.value_counts()
-if st.checkbox('Proporsi Unik Kolom Atribut'):
-    st.write(a)
+# a = credit_dataset.TARGET.value_counts()
+# if st.checkbox('Proporsi Unik Kolom Atribut'):
+#     st.write(a)
 
 #mendefinisikan model Tree
 clf = tree.DecisionTreeClassifier(criterion="entropy", splitter="best", max_depth=None, min_samples_split=2, 
