@@ -15,7 +15,7 @@ from sklearn.metrics import classification_report
 
 # memanggil model
 loaded_model = pickle.load(
-    open('.\model.sav', 'rb'))
+    open('.\model.sav'))
 
 def prediksinasabah(baru):
     hasilPrediksi = loaded_model.predict(baru)
