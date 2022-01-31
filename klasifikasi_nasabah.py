@@ -4,6 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pickle
+from turtle import title
 from PIL import Image
 from sklearn import tree
 from sklearn.model_selection import train_test_split
