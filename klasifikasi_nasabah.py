@@ -12,7 +12,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report
 
-#image = Image.open(".\Final Decision Tree.png")
+image = Image.open("./Final Decision Tree.png")
 
 # memanggil model
 loaded_model = pickle.load(
@@ -97,8 +97,8 @@ a = tree.plot_tree(clf)
 #     st.write(a)
 
 #Menampilkan gambar
-# st.subheader('Model Hasil Pelatihan')
-# st.image(image)
+st.subheader('Model Hasil Pelatihan')
+st.image(image)
 
 # prediksi data uji
 hasilPrediksi = clf.predict(X_test)
